@@ -1,7 +1,7 @@
 package db
 
 import (
-	"github.com/codeedu/imersao-fullstack-fullcycle/domain/model"
+	"github.com/andressandrade/imersao-fullstack-fullcycle/domain/model"
 	"log"
 	"os"
 	"path/filepath"

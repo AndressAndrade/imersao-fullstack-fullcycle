@@ -2,10 +2,10 @@ package kafka
 
 import (
 	"fmt"
-	"github.com/codeedu/imersao/codepix-go/application/factory"
-	appmodel "github.com/codeedu/imersao/codepix-go/application/model"
-	"github.com/codeedu/imersao/codepix-go/application/usecase"
-	"github.com/codeedu/imersao/codepix-go/domain/model"
+	"github.com/andressandrade/imersao-fullstack-fullcycle/codepix/application/factory"
+	appmodel "github.com/andressandrade/imersao-fullstack-fullcycle/codepix/application/model"
+	"github.com/andressandrade/imersao-fullstack-fullcycle/codepix/application/usecase"
+	"github.com/andressandrade/imersao-fullstack-fullcycle/codepix/domain/model"
 	ckafka "github.com/confluentinc/confluent-kafka-go/kafka"
 	"github.com/jinzhu/gorm"
 	"os"

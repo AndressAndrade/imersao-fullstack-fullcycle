@@ -2,7 +2,7 @@ package usecase
 
 import (
 	"errors"
-	"github.com/codeedu/imersao/codepix-go/domain/model"
+	"github.com/andressandrade/imersao-fullstack-fullcycle/codepix/domain/model"
 	"log"
 )
 

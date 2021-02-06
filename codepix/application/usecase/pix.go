@@ -1,7 +1,7 @@
 package usecase
 
 import (
-	"github.com/codeedu/imersao/codepix-go/domain/model"
+	"github.com/andressandrade/imersao-fullstack-fullcycle/codepix/domain/model"
 )
 
 type PixUseCase struct {
