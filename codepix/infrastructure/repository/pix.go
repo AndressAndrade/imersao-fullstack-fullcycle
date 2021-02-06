@@ -2,7 +2,7 @@ package repository
 
 import (
 	"fmt"
-	"github.com/andressandrade/imersao-fullstack-fullcycle/domain/model"
+	"github.com/andressandrade/imersao-fullstack-fullcycle/codepix/domain/model"
 	"github.com/jinzhu/gorm"
 )
 
