@@ -16,9 +16,9 @@ limitations under the License.
 package cmd
 
 import (
-	"github.com/andressandrade/imersao-fullstack-fullcycle/domain/model"
-	"github.com/andressandrade/imersao-fullstack-fullcycle/infrastructure/db"
-	"github.com/andressandrade/imersao-fullstack-fullcycle/infrastructure/repository"
+	"github.com/andressandrade/imersao-fullstack-fullcycle/codepix/domain/model"
+	"github.com/andressandrade/imersao-fullstack-fullcycle/codepix/infrastructure/db"
+	"github.com/andressandrade/imersao-fullstack-fullcycle/codepix/infrastructure/repository"
 	"github.com/spf13/cobra"
 	"os"
 )

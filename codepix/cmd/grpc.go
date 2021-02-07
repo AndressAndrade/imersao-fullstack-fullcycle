@@ -16,8 +16,8 @@ limitations under the License.
 package cmd
 
 import (
-	"github.com/andressandrade/imersao-fullstack-fullcycle/application/grpc"
-	"github.com/andressandrade/imersao-fullstack-fullcycle/infrastructure/db"
+	"github.com/andressandrade/imersao-fullstack-fullcycle/codepix/application/grpc"
+	"github.com/andressandrade/imersao-fullstack-fullcycle/codepix/infrastructure/db"
 	"os"
 
 	"github.com/spf13/cobra"

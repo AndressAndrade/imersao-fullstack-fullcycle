@@ -17,14 +17,18 @@ package cmd
 
 import (
 	"fmt"
-
+	// Kafka Producer
+	kafkap "github.com/andressandrade/imersao-fullstack-fullcycle/codepix/producer"
+	// Kafka Consumer
+	kafkac "github.com/andressandrade/imersao-fullstack-fullcycle/codepix/consumer"
+	ckafka "github.com/confluentinc/confluent-kafka-go/kafka"
 	"github.com/spf13/cobra"
 )
 
 // kafkaCmd represents the kafka command
 var kafkaCmd = &cobra.Command{
 	Use:   "kafka",
-	Short: "A brief description of your command",
+	Short: "Start consuming transactions using Apache Kafka",
 	Long: `A longer description that spans multiple lines and likely contains examples
 and usage of using your command. For example:
 
@@ -32,7 +36,15 @@ Cobra is a CLI library for Go that empowers applications.
 This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("kafka called")
+		fmt.Println("Produzindo mensagens")
+		deliveryChan := make(chan ckafka.Event)
+		producer := kafkap.NewKafkaProducer()
+		
+		kafkap.Publish("Olá Kafka, mensagem enviada", "desafio2", producer, deliveryChan)
+		go kafkap.DeliveryReport(deliveryChan)
+
+		kafkaProcessor := kafkac.NewKafkaProcessor(producer, deliveryChan);
+		kafkaProcessor.Consume() 
 	},
 }
 
